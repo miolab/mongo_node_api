@@ -7,7 +7,12 @@ RestAPI (Node.js &amp; MongoDB)
   ```
   $ npm --version
   6.14.4
+
+  $ mongo --version
+  MongoDB shell version v4.2.5
   ```
+
+  - MongoDB installed by Homebrew
 
 ---
 
@@ -49,4 +54,6 @@ Continuous execute Server running:
 
 ```
 $ npm install mongoose
+
+$ brew services start mongodb-community
 ```
