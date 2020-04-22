@@ -18,7 +18,7 @@ $ npm init -y
 $ npm install express
 ```
 
-### init confirmation
+### init confirmation Server running
 
 - http://localhost:3000/
 
@@ -32,6 +32,10 @@ $ npm install express
 $ npm install nodemon
 ```
 
-```
-$ npx nodemon app.js
-```
+Continuous execute Server running:
+
+- http://localhost:3000/
+
+  ```
+  $ npx nodemon app.js
+  ```
