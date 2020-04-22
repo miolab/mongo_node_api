@@ -50,10 +50,29 @@ Continuous execute Server running:
   $ npx nodemon app.js
   ```
 
-### install Mongoose
+### install Mongoose & running MongoDB
 
 ```
 $ npm install mongoose
+```
 
+```
 $ brew services start mongodb-community
+
+$ mongo
+.
+.
+
+> use test_api_db
+
+> db.users.insertOne({name:"im", music:"avicii"})
+
+> show dbs
+
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("5ea0105e3496bcf020d268ce"),
+        "name" : "im",
+        "music" : "avicii"
+}
 ```
