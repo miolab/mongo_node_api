@@ -15,6 +15,11 @@ RestAPI (Node.js &amp; MongoDB)
 
 ```
 $ npm init -y
+```
+
+### install express
+
+```
 $ npm install express
 ```
 
@@ -26,7 +31,7 @@ $ npm install express
   $ node app.js
   ```
 
-### add nodemon
+### install nodemon
 
 ```
 $ npm install nodemon
@@ -39,3 +44,9 @@ Continuous execute Server running:
   ```
   $ npx nodemon app.js
   ```
+
+### install Mongoose
+
+```
+$ npm install mongoose
+```
