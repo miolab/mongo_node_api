@@ -75,4 +75,43 @@ $ mongo
         "name" : "im",
         "music" : "avicii"
 }
+
+> exit
 ```
+
+### fix `app.js` (add: mongoose)
+
+connect DB.
+
+- restart app.js by nodemon
+
+  ```
+  [nodemon] restarting due to changes...
+  [nodemon] starting `node app.js`
+  Test Server running http://localhost:3000
+  DB connection succeed.
+  ```
+
+  - if get following caution;
+
+    ```
+    [nodemon] restarting due to changes...
+    [nodemon] starting `node app.js`
+    (node:66401) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+    (node:66401) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+    Test Server running http://localhost:3000
+    DB connection succeed.
+    ```
+
+    add following script.
+
+    ```
+    # app.js
+
+    const dbConnectOptions = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    };
+
+    mongoose.connect("mongodb://127.0.0.1/test_api_db", dbConnectOptions);
+    ```
