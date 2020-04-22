@@ -25,3 +25,13 @@ $ npm install express
   ```
   $ node app.js
   ```
+
+### add nodemon
+
+```
+$ npm install nodemon
+```
+
+```
+$ npx nodemon app.js
+```
